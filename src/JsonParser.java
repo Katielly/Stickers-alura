@@ -12,6 +12,7 @@ public class JsonParser {
 
     public List<Map<String, String>> parse(String json) {
 
+        // System.out.println("regex");
         Matcher matcher = REGEX_ITEMS.matcher(json);
         if (!matcher.find()) {
 
